@@ -12,7 +12,7 @@ export const Contribution = (props: Props) => {
   return (
     <>
       <img
-        src={`assets/${imageName}`}
+        src={`${process.env.PUBLIC_URL}/assets/${imageName}`}
         alt={title}
         className={`flex border-4 my-4 w-1/3 h-auto object-cover rounded ${
           isEven

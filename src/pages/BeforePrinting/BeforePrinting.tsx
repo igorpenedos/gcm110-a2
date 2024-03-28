@@ -13,18 +13,24 @@ export default function BeforePrinting() {
             Understanding how people accessed information
           </div>
         </div>
-        <img
-          src="./assets/monk.webp"
-          alt="monk writing a scripture"
-          className="w-1/2 border-4 border-tertiary"
-        />
+        <div className="w-1/2 relative">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/monk.webp`}
+            alt="monk writing a scripture"
+            className="w-full border-4 border-tertiary"
+          />
+          <div className="absolute text-tertiary right-2 top-2 font-bold">(Unknown, 2018)</div>
+        </div>
       </div>
       <div className="px-96 pt-16 pb-8 mt-16 text-lg font-semibold bg-tertiary text-primary">
-        <img
-          src="./assets/communication.jpg"
-          alt="people communicating in the 1400s"
-          className="w-96 h-full float-left border-4 border-primary mr-4 mb-4"
-        />
+        <div className="float-left mb-4">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/communication.jpg`}
+            alt="people communicating in the 1400s"
+            className="w-96 h-full border-4 border-primary mr-4"
+          />
+          <div>(HistoryExtra, 2023)</div>
+        </div>
         <p>
           Before the printing press's creation, the average person lived
           isolated lives with limited travel and therefore had to rely on word
@@ -36,10 +42,10 @@ export default function BeforePrinting() {
           barriers involved with access to written information reinforced the
           need for people to rely on priests for religious texts and word of
           mouth for other information. Word of mouth presented a concern as
-          information could be lost when passed down from person to person. This
-          was until the printing press was invented and changed the world.
+          information could be lost when passed down. This was until the
+          printing press was invented and changed the world.
         </p>
-        <div className="mt-16 flex justify-center">
+        <div className="mt-16">
           <Button
             text="Printing Press is Born"
             to="/introPress"

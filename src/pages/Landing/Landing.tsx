@@ -11,7 +11,10 @@ export default function Landing() {
           loop
           muted
         >
-          <source src="./assets/landing_printing.mp4" type="video/mp4" />
+          <source
+            src={`${process.env.PUBLIC_URL}/assets/landing_printing.mp4`}
+            type="video/mp4"
+          />
         </video>
         <div className="absolute flex flex-col w-full text-tertiary font-bold drop-shadow-xl">
           <h1 className="text-9xl w-fit ml-auto mr-auto p-2 rounded">
@@ -27,10 +30,10 @@ export default function Landing() {
       </div>
       <div className="pt-6 xl:mx-96 mx-12 text-xl">
         <div>
-          The printing press, invented by German printer Johann Gutenberg, had a
-          major impact on how information could be distributed and absorbed. The
-          invention transformed global knowledge and how humans would treat and
-          share information. The process of printing introduced many new
+          The printing press, invented by German printer Johannes Gutenberg, had
+          a major impact on how information could be distributed and absorbed.
+          The invention transformed global knowledge and how humans would treat
+          and share information. The process of printing introduced many new
           concepts to society and opened up many opportunities and jobs. I
           welcome you to explore how information went from the elites to
           everyone.
